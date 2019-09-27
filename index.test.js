@@ -5,6 +5,7 @@ function run(input, output, opts) {
   return postcss([plugin(opts)])
     .process(input)
     .then((result) => {
+      console.log('result', result.css);
       expect(result.css.replace(/[\r\n\s]/g, '')).toEqual(output);
       expect(result.warnings()).toHaveLength(0);
     });
