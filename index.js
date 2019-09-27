@@ -19,7 +19,7 @@ module.exports = postcss.plugin('postcss-1px-border', () => (css) => {
             );
           }
         });
-        rule.append({
+        rule.root().append({
           name: 'media',
           params: `
               (min-resolution: 2dppx){
@@ -43,7 +43,7 @@ module.exports = postcss.plugin('postcss-1px-border', () => (css) => {
                 }
               }`,
         });
-        rule.append({
+        rule.root().append({
           name: 'media',
           params: `
               (min-resolution: 3dppx) {
@@ -77,7 +77,7 @@ module.exports = postcss.plugin('postcss-1px-border', () => (css) => {
         if (splitBorderValue.length === 3) {
           [, , color] = splitBorderValue;
         }
-        rule.append({
+        rule.root().append({
           name: 'media',
           params: `
               (min-resolution: 2dppx){
@@ -94,7 +94,7 @@ module.exports = postcss.plugin('postcss-1px-border', () => (css) => {
                 }
               }`,
         });
-        rule.append({
+        rule.root().append({
           name: 'media',
           params: `
               (min-resolution: 3dppx) {
@@ -113,7 +113,7 @@ module.exports = postcss.plugin('postcss-1px-border', () => (css) => {
         if (splitBorderValue.length === 3) {
           [, , color] = splitBorderValue;
         }
-        rule.append({
+        rule.root().append({
           name: 'media',
           params: `
               (min-resolution: 2dppx){
@@ -131,7 +131,7 @@ module.exports = postcss.plugin('postcss-1px-border', () => (css) => {
                 }
               }`,
         });
-        rule.append({
+        rule.root().append({
           name: 'media',
           params: `
               (min-resolution: 3dppx) {
@@ -150,7 +150,7 @@ module.exports = postcss.plugin('postcss-1px-border', () => (css) => {
         if (splitBorderValue.length === 3) {
           [, , color] = splitBorderValue;
         }
-        rule.append({
+        rule.root().append({
           name: 'media',
           params: `
               (min-resolution: 2dppx){
@@ -167,7 +167,7 @@ module.exports = postcss.plugin('postcss-1px-border', () => (css) => {
                 }
               }`,
         });
-        rule.append({
+        rule.root().append({
           name: 'media',
           params: `
               (min-resolution: 3dppx) {
@@ -186,7 +186,7 @@ module.exports = postcss.plugin('postcss-1px-border', () => (css) => {
         if (splitBorderValue.length === 3) {
           [, , color] = splitBorderValue;
         }
-        rule.append({
+        rule.root().append({
           name: 'media',
           params: `
               (min-resolution: 2dppx){
@@ -203,7 +203,7 @@ module.exports = postcss.plugin('postcss-1px-border', () => (css) => {
                 }
               }`,
         });
-        rule.append({
+        rule.root().append({
           name: 'media',
           params: `
               (min-resolution: 3dppx) {
