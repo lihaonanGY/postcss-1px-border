@@ -1,0 +1,36 @@
+{
+  "name": "postcss-1px-border",
+  "version": "0.1.0",
+  "description": "PostCSS plugin Solve the problem of 1 pixel border on the mobile side",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin"
+  ],
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "haonanl@outlook.com",
+  "license": "MIT",
+  "repository": "lihaonanGY/postcss-1px-border",
+  "bugs": {
+    "url": "https://github.com/lihaonanGY/postcss-1px-border/issues"
+  },
+  "homepage": "https://github.com/lihaonanGY/postcss-1px-border",
+  "dependencies": {
+    "postcss": "^7.0.6"
+  },
+  "devDependencies": {
+    "eslint": "^5.10.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jest": "^22.3.0",
+    "jest": "^24.1.0"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss/es5"
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
