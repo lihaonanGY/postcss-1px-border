@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/lihaonanGY/postcss-1px-border",
   "dependencies": {
-    "postcss": "^7.0.6"
+    "postcss": "^8.2.10"
   },
   "devDependencies": {
     "eslint": "^5.10.0",
